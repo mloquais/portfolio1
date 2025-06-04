@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	<head>
+	    	<meta charset="utf-8" />
+	    	<title>Mon CV</title>
+	    	<meta name="description" content="" />
+	    	<meta name="keywords" content="" />
+			<link rel="stylesheet" href="stylecv.css">
+	</head>
+    <script>
+        document.querySelectorAll('area').forEach(area => {
+            area.addEventListener('click', function (e) {
+            const id = this.getAttribute('href').substring(1);
+            const target = document.getElementById(id);
+            if (target) {
+                target.classList.remove('animate-zoom');
+                void target.offsetWidth;
+                target.classList.add('animate-zoom');
+            }
+            });
+        });
+    </script>
+    <body>
+        <nav>
+			<a href ="index.html#proj">
+			<h3>
+				Mes projets
+			</h3>
+			</a>
+            <a href = "index.html">
+			<h3>
+				Menu
+			</h3>
+            </a>
+			<h3>
+				Autres
+			</h3>
+		</nav>
+        <header>
+            <section>
+                <div class = "cvdiv">
+                    
+                    <img src="image/imageCV.png" alt="Mon CV" class="CV" usemap="#image-map">
+                        <map name="image-map">
+                            <area target="" alt="" title="" href="index#proj" coords="239,184,698,523" shape="rect">
+                            <area target="" alt="" title="" href="#stage" coords="238,535,702,781" shape="rect">
+                            <area target="" alt="" title="" href="#formation" coords="236,792,701,993" shape="rect">
+                            <area target="" alt="" title="" href="#footer" coords="-1,174,233,345" shape="rect">
+                            <area target="" alt="" title="" href="#competence" coords="-1,347,233,521" shape="rect">
+                            <area target="" alt="" title="" href="#langue" coords="0,525,231,672" shape="rect">
+                            <area target="" alt="" title="" href="#qualite" coords="0,675,234,825" shape="rect">
+                            <area target="" alt="" title="" href="#interet" coords="-1,837,232,990" shape="rect">
+                        </map>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="formationsect">
+                <h2 id="formation">Ma formation</h2>
+                <article>
+                    <div>
+                        <h3>
+                        2nd Général lycée saint joseph Machecoul
+                        </h3>
+                    </div>
+                    <img src="image/fleche.webp" alt="fleche vers la droite" height = 50px class="fleche1">
+                    <div>
+                        <h3>
+                        1ere et terminal Sti2d la joliverie - Bac mention Bien
+                        </h3>
+                    </div>
+                    <img src="image/fleche.webp" alt="fleche vers la droite" height = 50px class="fleche2">
+                    <div>
+                        <h3>
+                        BUT informatique - IUT de lannion en 1ere année
+                        </h3>
+                    </div>
+                </article>
+            </section>
+
+            <section class="mesProjet">
+                <div class = "titre">
+                    <h2 class = "titre2">Mes projets</h2>
+                </div>
+                <article>
+                    <section class="snake">
+                        <div class="container">
+                            <h4 id = "optimiser">Optimiser : Exploration algorithmique d’un problème</h4>
+
+                            <div class="star-section">
+                            <div class="star-title">S - Situation</div>
+                            <div class="star-content">
+                                Dans le cadre de la SAÉ 2.02, nous avons exploré différentes approches algorithmiques pour résoudre des problèmes d’analyse de données. Le projet portait sur la mise en œuvre des algorithmes KNN (K-Nearest Neighbors) et K-Means.
+                            </div>
+                            </div>
+
+                            <div class="star-section">
+                            <div class="star-title">T - Tâche</div>
+                            <div class="star-content">
+                                L’objectif était de développer un programme capable de classer ou de regrouper des données efficacement en optimisant précision, vitesse d’exécution et lisibilité des résultats. Nous avons également comparé les performances des deux méthodes.
+                            </div>
+                            </div>
+
+                            <div class="star-section">
+                            <div class="star-title">A - Action</div>
+                            <div class="star-content">
+                                J’ai implémenté l’algorithme KNN en Python, en prenant en compte le traitement des données d’entrée, les distances, et la visualisation graphique des résultats. J’ai aussi participé à l’ajustement des paramètres pour améliorer la précision.
+                            </div>
+                            </div>
+
+                            <div class="star-section">
+                            <div class="star-title">R - Résultat</div>
+                            <div class="star-content">
+                                Le programme fonctionnait correctement et a permis d’obtenir des résultats fiables. Cette SAÉ m’a permis de mieux comprendre les enjeux de l’algorithmique en data science, ainsi que la rigueur nécessaire pour évaluer les performances d’un algorithme.
+                            </div>
+                            </div>
+
+                            <div class="screenshots">
+                            <h2>Captures d'écran du programme</h2>
+                            <img src="image/knn.png" alt="Visualisation des clusters K-Means">
+                            <img src="image/Kmeans.png" alt="Résultats de classification KNN">
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="snake">
+                        <div class="container">
+                        <h4>Conduire : Recueil de besoins</h4>
+
+                        <div class="star-section">
+                        <div class="star-title">S - Situation</div>
+                        <div class="star-content">
+                            Dans le cadre de la SAÉ 1.05, nous avons travaillé en équipe pour répondre à une demande client fictive visant à formaliser les besoins liés à la création d’un site web sur un sport olympique.
+                        </div>
+                        </div>
+
+                        <div class="star-section">
+                        <div class="star-title">T - Tâche</div>
+                        <div class="star-content">
+                            Le projet consistait à recueillir les besoins du client à travers des échanges continus, puis à concevoir un site informatif en structurant les contenus et les pages. J’étais responsable de la page sur la discipline choisie : le judo.
+                        </div>
+                        </div>
+
+                        <div class="star-section">
+                        <div class="star-title">A - Action</div>
+                        <div class="star-content">
+                            J’ai rédigé le contenu, structuré la page HTML et assuré sa cohérence visuelle avec le reste du site. J’ai également collaboré avec mes coéquipiers pour harmoniser la navigation et le design général du projet.
+                        </div>
+                        </div>
+
+                        <div class="star-section">
+                        <div class="star-title">R - Résultat</div>
+                        <div class="star-content">
+                            Le site final a été validé avec succès. Il répondait aux attentes fonctionnelles du client fictif et montrait notre capacité à organiser un projet en mode agile, à dialoguer efficacement et à produire un rendu professionnel.
+                        </div>
+                        </div>
+
+                        <div class="screenshots">
+                        <h2>Captures d'écran du site</h2>
+                        <img src="image/Charte graphique.png" alt="Page judo - présentation">
+                        <img src="image/judo.png" alt="Site web – vue générale">
+                        </div>
+                    </div>
+                    </section>
+                    <section class = "snake">
+                    <div class="container">
+                        <h2 id ="réaliser">Réaliser : Implémentation d’un besoin client</h2>
+                            <div class="star-section">
+                            <div class="star-title">S - Situation</div>
+                            <div class="star-content">
+                                Dans le cadre d’une SAÉ, nous devions répondre à une demande client fictive en développant une application simple. Le besoin exprimé était la création d’un jeu Snake fonctionnel, jouable en mode console.
+                            </div>
+                            </div>
+
+                            <div class="star-section">
+                            <div class="star-title">T - Tâche</div>
+                            <div class="star-content">
+                                Notre objectif était de concevoir, coder, tester et intégrer ce jeu en respectant les contraintes du langage C, avec une interface utilisateur basique mais fluide, et une logique de jeu cohérente.
+                            </div>
+                            </div>
+
+                            <div class="star-section">
+                            <div class="star-title">A - Action</div>
+                            <div class="star-content">
+                                J’ai participé à la conception de l’algorithme de déplacement du serpent, à la gestion des collisions et à l’affichage dans la console. J’ai aussi effectué plusieurs phases de test pour corriger les bugs rencontrés.
+                            </div>
+                            </div>
+
+                            <div class="star-section">
+                            <div class="star-title">R - Résultat</div>
+                            <div class="star-content">
+                                Le jeu était pleinement fonctionnel, respectait les attentes du client et a été livré dans les temps. Ce projet nous a permis de renforcer nos compétences en programmation procédurale et en gestion de projet.
+                            </div>
+                            </div>
+
+                            <div class="screenshots">
+                            <h2>Captures d'écran du jeu</h2>
+                            <img src="image/snake.webp" alt="Capture d'écran du jeu snake">
+                            <img src="image/test.png" alt="Capture d'écran du cahier de test">
+                            </div>
+                        </div>
+                        </section>
+                        <section class="snake">
+                            <div class="container">
+                                <h4 id="collaborer">Collaborer – Projet de travail d'équipe : Vidéo Team Building</h4>
+
+                                <div class="star-section">
+                                <div class="star-title">S - Situation</div>
+                                <div class="star-content">
+                                    Dans le cadre d’un projet de cohésion d’équipe, nous avons dû concevoir et présenter un atelier de team building, suivi de la réalisation d’une vidéo teaser illustrant notre concept.
+                                </div>
+                                </div>
+
+                                <div class="star-section">
+                                <div class="star-title">T - Tâche</div>
+                                <div class="star-content">
+                                    L’objectif était de mettre en valeur nos compétences en communication, organisation et créativité, à travers la planification d’un événement collaboratif et sa promotion via une courte vidéo percutante.
+                                </div>
+                                </div>
+
+                                <div class="star-section">
+                                <div class="star-title">A - Action</div>
+                                <div class="star-content">
+                                    J’ai participé à la conception du scénario, au tournage des scènes ainsi qu’au montage de la vidéo. J’ai veillé à ce que le rythme soit dynamique et que le message soit clair et attractif pour les futurs participants.
+                                </div>
+                                </div>
+
+                                <div class="star-section">
+                                <div class="star-title">R - Résultat</div>
+                                <div class="star-content">
+                                    La vidéo a été bien reçue, jugée professionnelle et engageante. Ce projet nous a permis de développer nos soft skills, de renforcer la cohésion du groupe et de mieux appréhender la gestion collective d’une tâche créative.
+                                </div>
+                                </div>
+
+                                <div class="screenshots">
+                                <h2>la vidéo et Infographie</h2>
+                                 <div class = "video">
+                                <video controls width="400" height="auto">
+                                    <source src="videos/ma_video.mp4" type="video/mp4">
+                                    Votre navigateur ne supporte pas la balise vidéo.
+                                </video>
+                                <img src="image/Infographie.png" alt="Infographie présentation du concept">
+                                </div>
+                                </div>
+                            </div>
+                        </section>
+                    <section class="snake">
+                        <div class="container">
+                            <h4 id="administrer">Administrer : Installation d’un poste pour le développement</h4>
+
+                            <div class="star-section">
+                            <div class="star-title">S - Situation</div>
+                            <div class="star-content">
+                                Lors d’un projet technique, nous devions concevoir une solution permettant de convertir automatiquement différents types de documents (images, fichiers Excel, etc.) afin de les rendre exploitables sur un site web.
+                            </div>
+                            </div>
+
+                            <div class="star-section">
+                            <div class="star-title">T - Tâche</div>
+                            <div class="star-content">
+                                L’objectif était de créer un environnement de traitement automatisé, réutilisable et portable, capable de transformer des fichiers dans le bon format via des scripts exécutés dans un conteneur Docker.
+                            </div>
+                            </div>
+
+                            <div class="star-section">
+                            <div class="star-title">A - Action</div>
+                            <div class="star-content">
+                                J’ai rédigé des scripts shell et PHP pour automatiser les conversions, puis nous les avons encapsulés dans un conteneur Docker. Les script réaliser on permit de faciliter la conversion des documents.
+                            </div>
+                            </div>
+
+                            <div class="star-section">
+                            <div class="star-title">R - Résultat</div>
+                            <div class="star-content">
+                                Notre solution fonctionnait de manière fiable, elle permettait de traiter plusieurs fichiers en quelques secondes. Ce projet m’a permis de consolider mes compétences en déploiement, scripting et conteneurisation avec Docker.
+                            </div>
+                            </div>
+
+                            <div class="screenshots">
+                            <h2>Captures d'écran du projet Docker</h2>
+                                    <img src="image/docker1.png" alt="Interface du script de conversion">
+                                    <img src="image/docker2.png" alt="Structure du conteneur Docker">
+                            </div>
+                        </div>
+                        </section>
+                    <section class="snake">
+                        <div class="container">
+                            <h4 id="gerer" >Gérer –  Création d’une base de données</h4>
+
+                            <div class="star-section">
+                            <div class="star-title">S - Situation</div>
+                            <div class="star-content">
+                                Dans le cadre d’un projet de base de données, nous avons travaillé sur la modélisation et la mise en œuvre d’un schéma relationnel complet à partir d’un diagramme UML fourni.
+                            </div>
+                            </div>
+
+                            <div class="star-section">
+                            <div class="star-title">T - Tâche</div>
+                            <div class="star-content">
+                                Notre mission était d’élaborer le diagramme des contraintes d’intégrité référentielles, puis de rédiger le code SQL permettant de créer les tables et les relations dans une base de données fonctionnelle.
+                            </div>
+                            </div>
+
+                            <div class="star-section">
+                            <div class="star-title">A - Action</div>
+                            <div class="star-content">
+                                J’ai extrait les entités et les relations à partir du diagramme UML, puis conçu un script SQL structuré avec les clés primaires et étrangères, les types de données, ainsi que les contraintes de cohérence nécessaires.
+                            </div>
+                            </div>
+
+                            <div class="star-section">
+                            <div class="star-title">R - Résultat</div>
+                            <div class="star-content">
+                                Le schéma relationnel et le script SQL ont été validés sans erreur. Ce projet m’a permis de mieux maîtriser la logique de conception de bases de données relationnelles et de renforcer ma rigueur dans l’écriture de requêtes SQL complexes.
+                            </div>
+                            </div>
+
+                            <div class="screenshots">
+                            <h2>Captures d'écran du projet</h2>
+                                <div class ="sql">
+                                    <img src="image/bdd1.png" alt="Diagramme des contraintes d'intégrité">
+                                    <img src="image/bdd2.png" alt="Script SQL généré">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    </article>
+            </section>
+            <section id="competence" class="snake">
+                <div class="container">
+                    <h2>Compétences</h2>
+                    <ul>
+                    <li><strong>Programmation :</strong> C, Java, Python</li>
+                    <li><strong>Web :</strong> HTML, CSS, Bootstrap</li>
+                    <li><strong>Base de données :</strong> SQL, PostgreSQL</li>
+                    <li><strong>Conception :</strong> Ergonomie, Maquettage, UML</li>
+                    <li><strong>Gestion de projet :</strong> GIT, Gantt</li>
+                    <li><strong>Système :</strong> Windows, Linux, Bash, PHP, Docker</li>
+                    </ul>
+                </div>
+                </section>
+
+                <section id="langue" class="snake">
+                <div class="container">
+                    <h2>Langues</h2>
+                    <ul>
+                    <li>Anglais : C1 – aisance écrite et orale, bon anglais technique</li>
+                    <li>Espagnol : B1</li>
+                    </ul>
+                </div>
+                </section>
+
+                <section id="qualite" class="snake">
+                <div class="container">
+                    <h2>Qualités</h2>
+                    <ul>
+                    <li>Travail d’équipe</li>
+                    <li>Pédagogie</li>
+                    <li>Adaptabilité</li>
+                    </ul>
+                </div>
+                </section>
+
+                <section id="interet" class="snake">
+                <div class="container">
+                    <h2>Centres d’intérêt</h2>
+                    <ul>
+                    <li>Basketball (pratique en club, compétition et arbitrage)</li>
+                    <li>Dessin (pratique en autodidacte)</li>
+                    </ul>
+                </div>
+                </section>
+
+                <section id="stage" class="snake">
+                <div class="container">
+                    <h2>Stages</h2>
+                    <ul>
+                    <li><strong>NAVAL GROUP</strong> (2022) – Découverte des secteurs industriels, cybersécurité, travail en équipe</li>
+                    <li><strong>École primaire Notre Dame de Lourdes</strong> (2021) – Initiation à l’informatique auprès d’élèves, pédagogie</li>
+                    </ul>
+                </div>
+                </section>
+
+        </main>
+        <footer id="footer">
+			<div>
+				<h3>Contact :</h3>
+				<p>
+					Telephone : 06 45 43 12 78
+				</p>
+				<a href ="mailto:mathisloquais@gmail.com"> Contacter moi !</a>
+			</div>
+			<div>
+				<h3>Mes réseaux :</h3>
+				<img class = "linkedin" src = "image/linkedin.png" alt = "logo linkedin"width= 50em height = 50em>
+			</div>
+		</footer>
+    </body>
